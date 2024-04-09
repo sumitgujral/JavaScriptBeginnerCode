@@ -12,59 +12,59 @@ const pi = 3.14;
 
 
 
-var Area = [{
+var Area = {
 square:function(a){
     return a*a;
-}
-},{
+},
 
-rectangle:function areaOfRectangle(l,w){
+
+rectangle:function(l,w){
     return l*w;
 }
-},{
-traingle:function areaOfTriangle(b,h){
+,
+traingle:function(b,h){
     return 1/2*(b*h);
 }
-},{
-circle:function areaOfCircle(r){
+,
+circle:function(r){
     return pi*r*r;
 }
-},{
-parallelogram:function areaOfParallelogram(b,h){
+,
+parallelogram:function(b,h){
     return b*h;
 }
-},{
-trapezium:function areaOfTrapezium(x,y,h){
+,
+trapezium:function(x,y,h){
     return 1/2*(x*y)*h;
 }
-},{
-ellipse:function areaOfEllipse(x,y){
+,
+ellipse:function(x,y){
     return pi*x*y;
 }
-},{
-spher:function areaOfSpher(r){
+,
+spher:function(r){
     return 4*pi*(r*r);
 }
-},{
-cube:function areaOfCube(a){
+,
+cube:function(a){
     return 6*(a*a);
 }
-},{
-rectangularPrism:function areaOfRectangularPrism(w,l,h){
+,
+rectangularPrism:function(w,l,h){
     return 2*(w*l+h*l+h*w);
 }
-},{
-cylinder:function areaOfCylinder(r,h){
+,
+cylinder:function(r,h){
     return 2*pi*r*(r + h);
 }
-},{
-cone:function areaOfCone(r,sh){
+,
+cone:function(r,sh){
     return pi*r*(r + sh);
 }
-},{
-hemisphere:function areaOfHemisphere(r){
+,
+hemisphere:function(r){
     return 3*pi*r*r;	
 }}
-]
 
-Area.square.call(6);
+
+console.log(Area.traingle(20,35)+ "Meter");
