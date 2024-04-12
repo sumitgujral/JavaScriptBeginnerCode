@@ -10,8 +10,6 @@ const pi = 3.14;
 // let slantHeight = sh;
 
 
-
-
 var Area = {
 square:function(a){
     return a*a;
@@ -65,6 +63,5 @@ cone:function(r,sh){
 hemisphere:function(r){
     return 3*pi*r*r;	
 }}
-
 
 console.log(Area.traingle(20,35)+ "Meter");
